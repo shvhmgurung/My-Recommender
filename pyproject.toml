@@ -2,12 +2,11 @@
 name = "my-recommender"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "shvhmgurung",email = ""}
-]
+authors = []
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "pydantic (>=2.11.5,<3.0.0)"
 ]
 
 [tool.poetry]
