@@ -25,7 +25,7 @@ class User(BaseModel):
     github_url: Optional[HttpUrl] = Field(None, description="GitHub profile URL (optional)")
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "user_id": "b8a8f9cc-04e4-4e6f-9e10-d0544b25e2f3",
                 "username": "codewizard",
@@ -56,7 +56,7 @@ class Project(BaseModel):
     github_url: Optional[HttpUrl] = Field(None, description="Link to the project's GitHub repo (optional)")
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "id": "b8a8f9cc-04e4-4e6f-9e10-d0544b25e2f3",
                 "name": "FastAPI Recommender",
