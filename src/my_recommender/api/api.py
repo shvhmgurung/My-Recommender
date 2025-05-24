@@ -5,7 +5,7 @@ from my_recommender.models.models import User, Project
 from my_recommender.ml.recommender import recommend_projects
 from my_recommender.data.loader import generate_fake_users, generate_fake_projects
 
-app = FastAPI(title="Dev Recommender API")
+app = FastAPI(title="Recommender API")
 
 # Generate fake data at startup (can replace with DB or real data in v2)
 users = generate_fake_users(7)
